@@ -1,0 +1,31 @@
+package porcentaje;
+import java.util.Scanner;
+
+public class Porcentaje {
+
+    public static void main(String[] args) {
+        int hombres;
+        int mujeres;
+        int total;
+        
+        int porcentajeH;
+        int porcentajeM;
+        
+        System.out.print("Ingresa el número de Hombres: ");
+        Scanner leer = new Scanner (System.in);
+        hombres = leer.nextInt();
+        System.out.print("Ingresa el número de Mujeres: ");
+        mujeres = leer.nextInt();
+        
+        total = hombres+mujeres;
+        
+        System.out.println("\nEl total de alumnos es: "+total);
+        
+        porcentajeH = (hombres*100)/total;
+        porcentajeM = (mujeres*100)/total;
+        
+        System.out.println("El porcentaje de hombres en el grupo es: "+porcentajeH+"%");
+        System.out.println("El porcentaje de mujeres en el grupo es: "+porcentajeM+"%\n");
+    }
+    
+}

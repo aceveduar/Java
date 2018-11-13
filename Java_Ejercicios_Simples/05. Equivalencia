@@ -1,0 +1,22 @@
+package equivalencia;
+import java.util.Scanner;
+
+public class Equivalencia {
+
+    public static void main(String[] args) {
+        float precioDolar;
+        float pesos;
+        float equivalencia;
+        
+        Scanner leer = new Scanner(System.in);
+        
+        System.out.print("Ingresa el precio del Dolar: ");
+        precioDolar = leer.nextFloat();
+        System.out.print("Ingresa los Pesos a convertir: ");
+        pesos = leer.nextFloat();
+        
+        equivalencia = (pesos/precioDolar);
+        
+        System.out.println("\nLa equivalencia en dolares es: "+ equivalencia);
+    }
+}

@@ -9,7 +9,7 @@ public class IncrementoSalarial {
         int incremento;
         int salarioNuevo;
         
-        System.out.print("Ingresa tu sueldo alterior: ");
+        System.out.print("Ingresa tu salario alterior: ");
         Scanner leer = new Scanner (System.in);
         salarioAnterior = leer.nextInt();
         

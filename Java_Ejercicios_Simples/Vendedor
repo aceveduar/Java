@@ -1,0 +1,19 @@
+package descuento;
+import java.util.Scanner;
+
+
+public class Descuento {
+
+    public static void main(String[] args) {
+        float totalCompra, pagoFinal, descuento;
+        System.out.print("Ingresa el total de tu compra: ");
+        Scanner lee = new Scanner (System.in);
+        totalCompra = lee.nextFloat();
+        
+        descuento = (totalCompra*15)/100;
+        pagoFinal = totalCompra-descuento;
+        
+        System.out.println("Usted deberá pagar finalmente por su compra $"+pagoFinal); 
+    }
+    
+}

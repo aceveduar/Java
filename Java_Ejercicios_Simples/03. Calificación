@@ -1,0 +1,21 @@
+package calificacion;
+import java.util.Scanner;
+
+public class Calificacion {
+
+    public static void main(String[] args) {
+        float calFinal, parcial1, parcial2, parcial3;
+        
+        System.out.print("¿Cuánto sacaste en tu priemer parcial? ");
+        Scanner lee = new Scanner (System.in);
+        parcial1 = lee.nextFloat();
+        System.out.print("¿Cuánto sacaste en tu segundo parcial? ");
+        parcial2 = lee.nextFloat();
+        System.out.print("¿Cuánto sacaste en tu tercer parcial? ");
+        parcial3 = lee.nextFloat();
+        
+        calFinal = (parcial1+parcial2+parcial3)/3;
+        
+        System.out.println("\nTu calificación final en la materia de Algoritmos es: "+calFinal);
+    }
+}

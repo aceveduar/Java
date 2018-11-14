@@ -1,8 +1,8 @@
-package incrementosalarial;
+package salario;
 
 import java.util.Scanner;
 
-public class IncrementoSalarial {
+public class Salario {
 
     public static void main(String[] args) {
         int salarioAnterior;
@@ -14,9 +14,9 @@ public class IncrementoSalarial {
         salarioAnterior = leer.nextInt();
         
         incremento = (salarioAnterior*25)/100;
-        
         salarioNuevo = salarioAnterior+incremento;
         
         System.out.println("Tu salario nuevo es: "+salarioNuevo);
     }
+    
 }

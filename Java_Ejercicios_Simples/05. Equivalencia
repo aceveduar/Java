@@ -9,7 +9,6 @@ public class Equivalencia {
         float equivalencia;
         
         Scanner leer = new Scanner(System.in);
-        
         System.out.print("Ingresa el precio del Dolar: ");
         precioDolar = leer.nextFloat();
         System.out.print("Ingresa los Pesos a convertir: ");
